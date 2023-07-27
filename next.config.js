@@ -7,11 +7,13 @@ module.exports = {
         destination: "/auth/login",
         permanent: true,
       },
-      {
-        source: "/*",
-        destination: "/",
-        permanent: true,
-      },
     ];
+  },
+  reactStrictMode: true,
+  swcMinify: true,
+  modularizeImports: {
+    "@mui/icons-material": {
+      transform: "@mui/icons-material/{{member}}",
+    },
   },
 };
